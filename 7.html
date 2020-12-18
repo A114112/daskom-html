@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Buku Tamu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body style="padding: 20px;">
+    <h2>Form Buku Tamu</h2>
+    <form>
+        <div class="form-group">
+            <label>Nama Lengkap:</label>
+            <input type="text" name="name" size="55" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Jenis Kelamin:</label>
+            <div class="radio">
+                <label><input type="radio" name="gender"> Laki - laki</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="gender"> Perempuan</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Alamat:</label>
+            <textarea name="address" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Email:</label>
+            <input class="form-control" type="email" name="email">
+        </div>
+        <div class="form-group">
+            <label>Aktif pada sosial media:</label>
+            <div>
+            <label class="checkbox-inline"><input type="checkbox" name="facebook" value="Ya"> Facebook</label>
+            <label class="checkbox-inline"><input type="checkbox" name="twitter" value="Ya"> Twitter</label>
+            <label class="checkbox-inline"><input type="checkbox" name="instagram" value="Ya"> Instagram</label>
+            <label class="checkbox-inline"><input type="checkbox" name="path" value="Ya"> Path</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Mengetahui web ini dari:</label>
+            <select name="info" class="form-control">
+                <option selected="select">-=Pilih=-</option>
+                <option value="web udinus">Web Udinus</option>
+                <option value="surat kabar">Surat Kabar</option>
+                <option value="teman kerabat">Teman/Kerabat</option>
+                <option value="browsing internet">Browsing Internet</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Pesan:</label>
+            <textarea name="message" rows="3" class="form-control"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Kirim</button>
+        <button class="btn btn-secondary">Batal</button>
+    </form>
+</body>
+
+</html>
